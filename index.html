@@ -240,7 +240,20 @@
     }
   }, { once: true });
 </script>
+  <script>
+  document.addEventListener("click", function () {
+    const music = document.getElementById("bgMusic");
+    const msg = document.getElementById("tapMsg");
+
+    if (music.paused) {
+      music.play();
+    }
+
+    msg.style.display = "none";
+  }, { once: true });
+</script>
 </html>
+
 
 
 
